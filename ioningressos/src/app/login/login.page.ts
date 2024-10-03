@@ -13,8 +13,8 @@ export class LoginPage implements OnInit {
     private formBuilder: FormBuilder,
   ) { 
     this.login = this.formBuilder.group({
-      login: new FormControl("", [Validators.required]), 
-      senha: new FormControl("", [Validators.required]) 
+      login: ([Validators.required]), 
+      senha: ( [Validators.required]) 
     });
   }
 
