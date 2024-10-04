@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
+      <ion-button routerLink="/home">
+        <ion-icon name="arrow-back" id="arrowToolbar"></ion-icon>
+      </ion-button>
     </ion-buttons>
     <ion-title>
       Turismo RJ
@@ -23,12 +26,9 @@
       <ion-card-title>Pão de Açucar</ion-card-title>
     </ion-card-header>
   
-    <ion-card-content>
-      O Pão de Açúcar é um dos cartões-postais mais famosos da cidade do Rio de Janeiro e é um destino turístico popular para pessoas de todo o mundo. 
-      Com uma altura de 396 metros, essa montanha rochosa oferece vistas panorâmicas deslumbrantes da cidade.
-    </ion-card-content>
-    <ion-button class="buttonCard" expand="block" routerLink="/login">
-      Quero ir
+    <ion-button expand="block" href="https://maps.app.goo.gl/VPnfTJjnFhgPvrn46" target="_blank">
+      <ion-icon name="navigate"></ion-icon>
+      Localização
     </ion-button>
   </ion-card>
 
@@ -38,12 +38,9 @@
       <ion-card-title>Cristo Redentor</ion-card-title>
     </ion-card-header>
 
-    <ion-card-content>
-      O Cristo Redentor encontra-se de braços abertos, formando uma cruz, e tem 38 metros de altura, o que equivale a um edifício de 13 andares. Desse total, 
-      30 metros são do monumento e oito do pedestal.
-    </ion-card-content>
-    <ion-button class="buttonCard" expand="block" routerLink="/login">
-      Quero ir
+    <ion-button expand="block" href="https://maps.app.goo.gl/3mYaa4YVr9nxaPZW7" target="_blank">
+      <ion-icon name="navigate"></ion-icon>
+      Localização
     </ion-button>
   </ion-card>
 
@@ -53,12 +50,12 @@
       <ion-card-title>Arcos da Lapa</ion-card-title>
     </ion-card-header>
 
-    <ion-card-content>
-      O antigo Aqueduto da Carioca, conhecido como Arcos da Lapa, é um dos cartões postais da cidade, 
-      além de ser o símbolo mais representativo do Rio Antigo preservado na região boêmia da Lapa.
-    </ion-card-content>
-    <ion-button class="buttonCard" expand="block" routerLink="/login">
-      Quero ir
-    </ion-button>
+    <ion-card-title>
+      <ion-button expand="block" href="https://maps.app.goo.gl/LnvFdjpmw2qqWzXu9" target="_blank">
+        <ion-icon name="navigate"></ion-icon>
+        Localização
+      </ion-button>
+    </ion-card-title>
   </ion-card>
 </ion-content>
+

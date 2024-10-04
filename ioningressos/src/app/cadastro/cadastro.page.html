@@ -1,5 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home">
+        <ion-icon name="arrow-back" id="arrowToolbar"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Turismo RJ
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/login">
+        login
+      </ion-button>
+      <ion-button routerLink="/cadastro">
+        Cadastro
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
-  <h1>Cadastro</h1>
+  <h1>Registre-se</h1>
   <form [formGroup]="cadastro" (ngSubmit)="formCadastro()">
     <ion-item>
       <ion-label>Nome:</ion-label>
@@ -16,8 +37,9 @@
       <ion-input type="email" formControlName="email"></ion-input>
     </ion-item>
    
-    <ion-item>
-      <ion-label>CPF:</ion-label>
+    <!-- Remover CPF e por data de nascimento -->
+    <ion-item> 
+      <ion-label>CPF:</ion-label> 
       <ion-input type="text" formControlName="cpf"></ion-input>
     </ion-item>
 
